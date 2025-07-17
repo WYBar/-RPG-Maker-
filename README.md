@@ -15,7 +15,7 @@ RPG Maker游戏的主要文本内容以json形式存储于www/data文件夹下�
 将python文件置于与www文件夹平行的位置，并依次执行以下文件：
 
 1. **transfile2json.py**：从www/data中提取日语内容，按序格式化并保存为一个translation_strings.json文件；
-2. **translate_v4.py**：调用deepseek API(https://platform.deepseek.com/usage)，逐行对translation_strings.json进行翻译，结果保存到translation_strings_cn.json；
+2. **translate_v4.py**：调用deepseek API([DeepSeek API](https://platform.deepseek.com/usage))，逐行对translation_strings.json进行翻译，结果保存到translation_strings_cn.json；
 3. **write_back_cn_trans.py**：将translation_strings_cn.json写回到www/data中的目标位置。
 
 ### 其余
